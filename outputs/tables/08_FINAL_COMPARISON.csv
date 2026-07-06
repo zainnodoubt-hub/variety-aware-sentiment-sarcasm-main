@@ -1,0 +1,23 @@
+comparison_group,model_type,model_key,model_name,task,trained_on,tested_on,seeds,test_macro_f1_mean,test_macro_f1_std,test_macro_precision_mean,test_macro_recall_mean,minority_class_f1_mean,best_marker
+Classical ML (headline),Classical ML,glove_svm,GloVe 100d + Linear SVM,sarcasm,pooled_all_varieties,pooled_all_varieties,2,0.6084,0.0,0.6158,0.7237,0.4149,
+Classical ML (headline),Classical ML,tfidf_logreg,TF-IDF + LogReg,sarcasm,pooled_all_varieties,pooled_all_varieties,2,0.6263,0.0,0.6147,0.6856,0.4036,
+Classical ML (headline),Classical ML,glove_svm,GloVe 100d + Linear SVM,sentiment,pooled_all_varieties,pooled_all_varieties,2,0.813,0.0,0.813,0.813,0.8088,
+Classical ML (headline),Classical ML,tfidf_logreg,TF-IDF + LogReg,sentiment,pooled_all_varieties,pooled_all_varieties,2,0.836,0.0,0.8381,0.8356,0.8268,
+Encoder transformers pooled,DeBERTa,deberta-v3-large,DeBERTa-v3-large,sarcasm,pooled_all_varieties,pooled_all_varieties,2,0.7153,0.007,0.7376,0.7018,0.5042,
+Encoder transformers pooled,RoBERTa,roberta-large,RoBERTa-large,sarcasm,pooled_all_varieties,pooled_all_varieties,2,0.7165,0.0206,0.7259,0.7185,0.5113,
+Encoder transformers pooled,DeBERTa,deberta-v3-large,DeBERTa-v3-large,sentiment,pooled_all_varieties,pooled_all_varieties,2,0.9113,0.0022,0.9121,0.9115,0.9098,BEST
+Encoder transformers pooled,RoBERTa,roberta-large,RoBERTa-large,sentiment,pooled_all_varieties,pooled_all_varieties,2,0.906,0.0051,0.9067,0.9058,0.9029,
+Encoder transformers per-variety diagonal,DeBERTa,deberta-v3-base_crossvariety,DeBERTa-v3-base,sarcasm,en-AU,en-AU,2,0.7475,0.0319,0.7437,0.7875,0.6791,
+Encoder transformers per-variety diagonal,DeBERTa,deberta-v3-base_crossvariety,DeBERTa-v3-base,sarcasm,en-IN,en-IN,2,0.5454,0.0893,0.5276,0.583,0.2076,
+Encoder transformers per-variety diagonal,DeBERTa,deberta-v3-base_crossvariety,DeBERTa-v3-base,sarcasm,en-UK,en-UK,2,0.5742,0.1328,0.5922,0.5693,0.1882,
+Qwen2.5-3B QLoRA per-variety,Qwen Q-LoRA,qwen2.5-3b-qlora,Qwen2.5-3B-Instruct + QLoRA,sarcasm,en-AU,en-AU,2,0.7712,0.0106,0.7621,0.7883,0.6902,BEST
+Qwen2.5-3B QLoRA per-variety,Qwen Q-LoRA,qwen2.5-3b-qlora,Qwen2.5-3B-Instruct + QLoRA,sarcasm,en-IN,en-IN,2,0.5924,0.0161,0.6573,0.5705,0.2247,
+Qwen2.5-3B QLoRA per-variety,Qwen Q-LoRA,qwen2.5-3b-qlora,Qwen2.5-3B-Instruct + QLoRA,sarcasm,en-UK,en-UK,2,0.6632,0.0265,0.7555,0.6453,0.369,
+Qwen2.5-3B QLoRA pooled,Qwen Q-LoRA,qwen2.5-3b-qlora,Qwen2.5-3B-Instruct + QLoRA,sarcasm,pooled_all_varieties,en-AU,2,0.7053,0.0433,0.7591,0.6886,0.551,
+Qwen2.5-3B QLoRA pooled,Qwen Q-LoRA,qwen2.5-3b-qlora,Qwen2.5-3B-Instruct + QLoRA,sarcasm,pooled_all_varieties,en-IN,2,0.6153,0.024,0.6223,0.6109,0.2803,
+Qwen2.5-3B QLoRA pooled,Qwen Q-LoRA,qwen2.5-3b-qlora,Qwen2.5-3B-Instruct + QLoRA,sarcasm,pooled_all_varieties,en-UK,2,0.7465,0.0411,0.7224,0.7792,0.5367,
+Qwen2.5-3B QLoRA pooled,Qwen Q-LoRA,qwen2.5-3b-qlora,Qwen2.5-3B-Instruct + QLoRA,sarcasm,pooled_all_varieties,pooled_all_varieties,2,0.7125,0.0326,0.7373,0.6949,0.4969,
+Qwen2.5-3B QLoRA target/rank sweep (kept ablation),LoRA Target/Rank Sweep,qwen2.5-3b-qlora_attention_mlp_rank16_bias_none,"Qwen2.5-3B-Instruct + QLoRA (attention_mlp, r=16)",sarcasm,en-IN,en-IN,1,0.6457,,0.6321,0.6642,0.3465,
+Threshold-tuned variants,Threshold Tuned,qwen2.5-3b-qlora_threshold_tuned,Qwen2.5-3B-Instruct + QLoRA,sarcasm,en-AU,en-AU,1,0.7682,,0.7585,0.7958,0.6945,
+Threshold-tuned variants,Threshold Tuned,deberta-v3-base_threshold_tuned,DeBERTa-v3-base,sarcasm,pooled_all_varieties,pooled_all_varieties,1,0.7079,,0.6822,0.7762,0.5266,
+Domain ablation (Reddit-only training),RoBERTa,roberta-large_reddit,RoBERTa-large,sarcasm,reddit_only,reddit_only,2,0.6708,0.047,0.6845,0.6642,0.499,

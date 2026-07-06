@@ -1,0 +1,4 @@
+variety,test_size,n_sarcastic,sarcastic_proportion,sarcastic_pct
+en-AU,667,196.0,0.2939,29.39%
+en-IN,816,56.0,0.0686,6.86%
+en-UK,700,53.0,0.0757,7.57%

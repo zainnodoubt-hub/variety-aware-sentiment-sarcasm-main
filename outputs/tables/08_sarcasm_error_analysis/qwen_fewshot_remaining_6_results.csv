@@ -1,0 +1,22 @@
+case_id,text,variety,source,gold_label,gold_label_name,adapter_prediction,adapter_prediction_name,fewshot_prediction,fewshot_prediction_name,raw_qwen_response,adapter_was_correct,fewshot_was_correct
+E03,"Tram way back in the 90s, hit a car.
+After school and packed.
+I was holding on, my friend was not.
+I saw him yeet, down the aisle as if he were falling off a cliff, taking the whole aisle with him.
+He maintained eye contact the whole way, wide eyed with an outstretched hand.
+One of those slow motion moments.
+A++ would experience again.",en-AU,Reddit,1,Sarcastic,0,Not Sarcastic,0,Not Sarcastic,"0
+Explanation: The text describes a vivid scene from the past without any clear indication of sarcasm. The events are presented as factual without any ironic or mocking tone. The description is straightforward and",False,False
+E04,"Yes, ""resignation"" should not be required - just mark the person as ""do not roster"". 
+Even if you did have to rehire to cover them, for casuals it doesn't matter, because there is no requirement to take them back after their holiday - that would be a simple decision when they came back of ""do I need staff now, or not?""
+Only reason I can think of is that it would be paperwork to explain why the person was marked ""no longer employed"" in the payroll and/or rostering computer system. Keeps it neat and tidy?",en-AU,Reddit,1,Sarcastic,0,Not Sarcastic,0,Not Sarcastic,"0
+Explanation: The text does not contain a clear contradiction between the stated opinion and its implied meaning. It suggests a practical approach to managing rosters without requiring formal resignation, which is neutral and",False,False
+E05,I'm sort of baffled that the moral of the story is to add to the chaos and barge on rather than encourage others to help people with prams (or mobility aids) if they're struggling why did nobody help her?,en-AU,Reddit,1,Sarcastic,0,Not Sarcastic,1,Sarcastic,"1
+Explanation: The text uses sarcasm by presenting a situation where the moral seems to be encouraging chaos and pushing forward, which contradicts the common expectation of helping others. The phrase ""add",False,True
+E08,"Bought an ANGUS Bacon BBQ Sauce with Onion and cheese. DRY MEAT!, NO ONION! CHEESE yes, 1 BACON Not 2, DOUBLE BBQ SAUCE! My friend has NOT had McDonald for years, and Now WILL NOT eat it again.",en-AU,Google,0,Not Sarcastic,1,Sarcastic,1,Sarcastic,"1
+Explanation: The text uses exaggerated language and hyperbole to express dissatisfaction, which is indicative of sarcasm. The speaker is clearly frustrated with the product's quality and quantity, using emphatic",False,False
+E09,"Yes, if nuclear power plants were free and everyone was happy to have one nearby, they'd threaten all coal power, even some wind and solar.
+But they're not and they aren't. It's nothing to do with not being ""allowed"". Literally no energy company is asking for ""permission"", because they know that nuclear makes no business sense.",en-AU,Reddit,0,Not Sarcastic,1,Sarcastic,0,Not Sarcastic,"0
+Explanation: The text is not sarcastic; it maintains a neutral tone and does not contradict itself or imply a negative stance. The speaker is simply stating a fact about the lack of interest",False,True
+E10,"I'm Not a Junkie, But Who Has The Best Gear? Can't Bring Any With Me. Help!",en-AU,Reddit,0,Not Sarcastic,1,Sarcastic,1,Sarcastic,"1
+Explanation: The text uses a rhetorical question format to imply a mocking or ironic tone about the asker's claim of not being a junkie but still wanting to compare gear. The phrase",False,False

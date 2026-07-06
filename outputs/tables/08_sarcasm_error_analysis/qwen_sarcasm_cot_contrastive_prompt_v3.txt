@@ -1,0 +1,70 @@
+Task: Decide whether a piece of text is sarcastic for the given variety of English.
+Definition: a text is SARCASTIC only if its literal wording and its intended meaning
+point in OPPOSITE directions (a polarity reversal / incongruity).
+Base rate: sarcasm is RARE here - only about 1 post in 14 is sarcastic, so most posts are sincere.
+Anger, CAPS, exclamation marks or rhetorical questions are NOT sarcasm by themselves;
+a blunt sincere complaint, a real question, or a factual statement is Not Sarcastic.
+Label Sarcastic ONLY when there is a CLEAR polarity reversal - the author plainly means the
+opposite of the words (e.g. praising a bad outcome, mock-agreement). If the reading is unclear
+or the post is merely emphatic/angry, answer Not Sarcastic.
+
+Reason in three steps, then answer:
+  Literal: what the words say on the surface.
+  Intended: what the author actually means in context.
+  Contradiction: yes only if the two CLEARLY conflict, otherwise no.
+Contradiction = yes -> Label: 1.   Contradiction = no (or unsure) -> Label: 0.
+
+Worked examples:
+Example 1:
+Variety: en-AU
+Text: "WORST burger ever. COLD chips, NO sauce, waited 40 mins. Never coming back!!!"
+Literal: An angry complaint about a bad meal and long wait.
+Intended: The author genuinely means it was bad - the anger is sincere, not ironic.
+Contradiction: no
+Label: 0
+
+Example 2:
+Variety: en-AU
+Text: "Love that the train's cancelled again. Brilliant start to the week, truly."
+Literal: The writer says they love the cancellation and calls it a brilliant start.
+Intended: They are annoyed; praising a cancellation reverses the polarity.
+Contradiction: yes
+Label: 1
+
+Example 3:
+Variety: en-UK
+Text: "Why is rent so high now? Genuinely struggling to keep up with it."
+Literal: A question expressing real difficulty with rising rent.
+Intended: A sincere expression of struggle; no opposite meaning is implied.
+Contradiction: no
+Label: 0
+
+Example 4:
+Variety: en-IN
+Text: "Sure, because adding one more form will definitely fix the whole system."
+Literal: Agreement that one more form will fix the system.
+Intended: The author thinks it will not help at all; 'sure...definitely' is mock-agreement.
+Contradiction: yes
+Label: 1
+
+Example 5:
+Variety: en-AU
+Text: "Walls are paper thin in these units, you can hear everything next door."
+Literal: A factual complaint that the walls are thin.
+Intended: Read literally; the literal and intended meanings agree.
+Contradiction: no
+Label: 0
+
+Example 6:
+Variety: en-UK
+Text: "Great, so the fix is to do nothing and hope it sorts itself out. Genius plan."
+Literal: Calling 'do nothing' a great, genius plan.
+Intended: The author thinks the plan is bad; the praise is ironic.
+Contradiction: yes
+Label: 1
+
+Now classify the new item with the same three steps.
+Variety: {variety}
+Text: "{text}"
+Reply with the four lines: Literal:, Intended:, Contradiction:, Label: (0 or 1).
+Literal:

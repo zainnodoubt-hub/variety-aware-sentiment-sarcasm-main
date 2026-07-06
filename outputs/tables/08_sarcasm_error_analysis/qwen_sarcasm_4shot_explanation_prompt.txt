@@ -1,0 +1,34 @@
+Task: Decide whether the text is sarcastic for the given variety of English.
+Return label 1 for Sarcastic and label 0 for Not Sarcastic.
+Use the explanation examples to focus on pragmatic contrast, irony, slang, and literal-vs-intended meaning.
+
+Few-shot examples with explanations:
+Example 1:
+Variety: en-AU
+Text: "Anyone proposing to run as a candidate for election should have to show that they have completed a civics course. This course should be free of charge, taught at accessible times, as adult community education. The course should cover the history of democracy, the Australian system, comparison to other systems in the past and in other nations, the expectations of an elected official, basic ethical philosophy etc, all up around twenty two-hour classes with assignments in between.  No intelligent, honest, decent adult should have any difficulty with this type of course, however it would at least put those who are not, on notice."
+Gold label: 1 (Sarcastic)
+Explanation: The gold label is Sarcastic because the surface wording conflicts with the implied negative stance. Context: en-AU/Reddit. Key cue(s): the cue is mainly pragmatic and depends on context rather than a single keyword. The adapter predicted the opposite label, suggesting it over-relied on lexical cues.
+
+Example 2:
+Variety: en-AU
+Text: "How do you define a "cold country"? We are talking San Francisco weather."
+Gold label: 1 (Sarcastic)
+Explanation: The gold label is Sarcastic because the surface wording conflicts with the implied negative stance. Context: en-AU/Reddit. Key cue(s): punctuation/emphasis may signal attitude. The adapter predicted the opposite label, suggesting it over-relied on lexical cues.
+
+Example 3:
+Variety: en-AU
+Text: "How insulated are they?  I'm over paper thin walls."
+Gold label: 0 (Not Sarcastic)
+Explanation: The gold label is Not Sarcastic because the statement is best read literally, without a clear polarity reversal. Context: en-AU/Reddit. Key cue(s): punctuation/emphasis may signal attitude. The adapter predicted the opposite label, suggesting it over-relied on lexical cues.
+
+Example 4:
+Variety: en-AU
+Text: "That's ridiculous.  But because people are too embarrassed/shy to say not thanks, it sells at that price and just encourages all prices to be increased. Don't be afraid to walk away if you don't like the price."
+Gold label: 0 (Not Sarcastic)
+Explanation: The gold label is Not Sarcastic because the statement is best read literally, without a clear polarity reversal. Context: en-AU/Reddit. Key cue(s): the cue is mainly pragmatic and depends on context rather than a single keyword. The adapter predicted the opposite label, suggesting it over-relied on lexical cues.
+
+Now classify the new item.
+Variety: {variety}
+Text: "{text}"
+Answer with exactly one label first, then one short explanation.
+Label:

@@ -1,0 +1,22 @@
+case_id,text,variety,gold_label,gold_label_name,adapter_prediction,v2_prediction,v2_prediction_name,v2_was_correct,raw_qwen_response
+E03,"Tram way back in the 90s, hit a car.
+After school and packed.
+I was holding on, my friend was not.
+I saw him yeet, down the aisle as if he were falling off a cliff, taking the whole aisle with him.
+He maintained eye contact the whole way, wide eyed with an outstretched hand.
+One of those slow motion moments.
+A++ would experience again.",en-AU,1,Sarcastic,0,0,Not Sarcastic,False,"0
+Reasoning: The text describes a vivid scene of a tram accident, focusing on the dramatic and tragic moment. There is no indication of sarcasm; the literal and intended meanings align, making it a straightforward recount of an event without any ironic twist. The description is matter-of-fact"
+E04,"Yes, ""resignation"" should not be required - just mark the person as ""do not roster"". 
+Even if you did have to rehire to cover them, for casuals it doesn't matter, because there is no requirement to take them back after their holiday - that would be a simple decision when they came back of ""do I need staff now, or not?""
+Only reason I can think of is that it would be paperwork to explain why the person was marked ""no longer employed"" in the payroll and/or rostering computer system. Keeps it neat and tidy?",en-AU,1,Sarcastic,0,0,Not Sarcastic,False,"0
+Reasoning: The text appears to be making a suggestion about workplace practices, which is neutral in tone. There is no indication of sarcasm; the literal and intended meanings align, thus it is not sarcastic. The phrase ""resignation"" is used in its normal sense without"
+E05,I'm sort of baffled that the moral of the story is to add to the chaos and barge on rather than encourage others to help people with prams (or mobility aids) if they're struggling why did nobody help her?,en-AU,1,Sarcastic,0,0,Not Sarcastic,False,"0
+Reasoning: The text appears to be making a critical observation about a situation, suggesting that adding to chaos and barging in without offering help is the moral of the story. The literal and intended meanings align, indicating a critical stance rather than sarcasm. There are no lexical irony markers"
+E08,"Bought an ANGUS Bacon BBQ Sauce with Onion and cheese. DRY MEAT!, NO ONION! CHEESE yes, 1 BACON Not 2, DOUBLE BBQ SAUCE! My friend has NOT had McDonald for years, and Now WILL NOT eat it again.",en-AU,0,Not Sarcastic,1,0,Not Sarcastic,True,"0
+Reasoning: The text appears to be a complaint about a product that did not meet the customer's expectations. The phrases like ""DRY MEAT!"", ""NO ONION!"", and ""DOUBLE BBQ SAUCE!"" indicate frustration and disappointment, but there is no indication that the speaker is"
+E09,"Yes, if nuclear power plants were free and everyone was happy to have one nearby, they'd threaten all coal power, even some wind and solar.
+But they're not and they aren't. It's nothing to do with not being ""allowed"". Literally no energy company is asking for ""permission"", because they know that nuclear makes no business sense.",en-AU,0,Not Sarcastic,1,0,Not Sarcastic,True,"0
+Reasoning: The text describes a factual situation without any indication of sarcasm. The literal and intended meanings align, making it not sarcastic. There are no ironic markers or context suggesting the opposite meaning. The text is simply stating a fact about the lack of interest in nuclear power plants"
+E10,"I'm Not a Junkie, But Who Has The Best Gear? Can't Bring Any With Me. Help!",en-AU,0,Not Sarcastic,1,0,Not Sarcastic,True,"0
+Reasoning: The text appears to be a genuine inquiry about gear quality without any indication of sarcasm. The phrase ""Can't bring any with me"" suggests a genuine inability rather than sarcasm. The overall tone is neutral and straightforward, without any evident contradiction between the literal and intended"

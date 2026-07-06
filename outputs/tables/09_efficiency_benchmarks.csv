@@ -1,0 +1,7 @@
+task,family,device,scenario,batch_size,avg_latency_ms
+sentiment,Classical (TF-IDF + LogReg),CPU,short_single,1,0.18
+sentiment,Classical (TF-IDF + LogReg),CPU,long_single,1,0.27
+sentiment,Classical (TF-IDF + LogReg),CPU,batch_32,32,0.34
+sarcasm,Classical (TF-IDF + LogReg),CPU,short_single,1,0.17
+sarcasm,Classical (TF-IDF + LogReg),CPU,long_single,1,0.26
+sarcasm,Classical (TF-IDF + LogReg),CPU,batch_32,32,0.33

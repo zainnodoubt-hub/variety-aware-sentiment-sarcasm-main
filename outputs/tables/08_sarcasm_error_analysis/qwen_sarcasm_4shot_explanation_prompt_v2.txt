@@ -1,0 +1,40 @@
+Task: Decide whether a piece of text is sarcastic for the given variety of English.
+Sarcasm = the literal wording and the intended meaning point in OPPOSITE directions.
+If the literal and intended readings AGREE, it is NOT sarcastic, even if the text is angry or emphatic.
+Many of these come from en-AU Reddit, where blunt sincere complaints are common - do not mistake bluntness for sarcasm.
+
+For each item, reason in two steps before answering:
+  (1) Literal reading: what the words say on the surface.
+  (2) Intended reading: what the author actually means in context.
+If (1) and (2) conflict -> label 1 (Sarcastic). If they agree -> label 0 (Not Sarcastic).
+
+Worked examples:
+Example 1:
+Variety: en-AU
+Text: "Anyone proposing to run as a candidate for election should have to show that they have completed a civics course. This course should be free of charge, taught at accessible times, as adult community education. The course should cover the history of democracy, the Australian system, comparison to other systems in the past and in other nations, the expectations of an elected official, basic ethical philosophy etc, all up around twenty two-hour classes with assignments in between.  No intelligent, honest, decent adult should have any difficulty with this type of course, however it would at least put those who are not, on notice."
+Reasoning: Context en-AU/Reddit. Read literally, the words look positive or neutral. The intended meaning is negative/mocking, so the polarity is reversed -> Sarcastic. Decisive cue(s): no lexical irony marker - the cue is purely pragmatic and needs context.
+Label: 1
+
+Example 2:
+Variety: en-AU
+Text: "How do you define a "cold country"? We are talking San Francisco weather."
+Reasoning: Context en-AU/Reddit. Read literally, the words look positive or neutral. The intended meaning is negative/mocking, so the polarity is reversed -> Sarcastic. Decisive cue(s): no lexical irony marker - the cue is purely pragmatic and needs context.
+Label: 1
+
+Example 3:
+Variety: en-AU
+Text: "How insulated are they?  I'm over paper thin walls."
+Reasoning: Context en-AU/Reddit. Read literally, the statement is a sincere complaint, question, or factual claim. There is no polarity reversal; the literal and intended readings agree -> Not Sarcastic. Decisive cue(s): no lexical irony marker - the cue is purely pragmatic and needs context.
+Label: 0
+
+Example 4:
+Variety: en-AU
+Text: "That's ridiculous.  But because people are too embarrassed/shy to say not thanks, it sells at that price and just encourages all prices to be increased. Don't be afraid to walk away if you don't like the price."
+Reasoning: Context en-AU/Reddit. Read literally, the statement is a sincere complaint, question, or factual claim. There is no polarity reversal; the literal and intended readings agree -> Not Sarcastic. Decisive cue(s): no lexical irony marker - the cue is purely pragmatic and needs context.
+Label: 0
+
+Now classify the new item using the same two-step reasoning.
+Variety: {variety}
+Text: "{text}"
+Output format (exactly): one line `Label: 0` or `Label: 1`, then one short reasoning line.
+Label:
